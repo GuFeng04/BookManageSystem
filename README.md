@@ -4,7 +4,7 @@
 
 在命令行界面实现图书管理系统。
 
-![img1](https://raw.githubusercontent.com/GuFeng04/img-folder/main/C_book_Manage/C_book_manage1.jpg "img1")
+![img](https://gitee.com/gufengspace/github_img/raw/master/img/wps1.jpg)
 
 ## 实现功能：
 
@@ -42,13 +42,13 @@
 
 项目结构：
 
-![img](https://raw.githubusercontent.com/GuFeng04/img-folder/main/C_book_Manage/C_book_manage2.png)
+![img](https://gitee.com/gufengspace/github_img/raw/master/img/wps1.png)
 
 功能一：退出。由exit函数实现，结束当前程序。
 
 功能二：登记图书。
 
-![img](https://github.com/GuFeng04/img-folder/raw/main/C_book_Manage/C_book_manage3.png)
+![img](https://gitee.com/gufengspace/github_img/raw/master/img/wps2.png)
 
 图2 登记图书流程图
 
@@ -56,17 +56,15 @@
 
 功能三：查询图书。
 
-![img](https://github.com/GuFeng04/img-folder/raw/main/C_book_Manage/C_book_manage4.png)
+![img](https://gitee.com/gufengspace/github_img/raw/master/img/wps3.png)
 
 图3 查找图书流程图
 
 如图所示，提供了两种查询的方法，一种利用图书号查询，一种利用图书名查询。通过输入的choose变量来控制选择。这两种查询集成在同一个方法中，在searchList方法中传入三个参数，list,name,number。通过传入NULL参数来实现控制。具体实现为：
 
-```c
 while (name != NULL && posNode != NULL && strcmp(posNode->data.name, name) ||
 
  bookNumber != NULL&& posNode != NULL && posNode->data.bookNumber != bookNumber)
-```
 
 当strcmp相等时，返回0，结束循环。否则指针指向下一个结点，接着遍历。
 
@@ -74,7 +72,7 @@ while (name != NULL && posNode != NULL && strcmp(posNode->data.name, name) ||
 
 功能4：借阅图书。
 
-![img](https://github.com/GuFeng04/img-folder/raw/main/C_book_Manage/C_book_manage5.png)
+![img](https://gitee.com/gufengspace/github_img/raw/master/img/wps4.png)
 
 图4 借阅图书流程图
 
@@ -88,7 +86,7 @@ while (name != NULL && posNode != NULL && strcmp(posNode->data.name, name) ||
 
 功能5：归还图书。
 
-![img](https://github.com/GuFeng04/img-folder/raw/main/C_book_Manage/C_book_manage6.png)
+![img](https://gitee.com/gufengspace/github_img/raw/master/img/wps5.png)
 
 图5 还书流程图
 
